@@ -91,7 +91,7 @@ int main() {
 	};
       printf("他是%d位数", p);
 	  do {
-			y / a = shu;
+		  shu=y / a;
 		  printf("%d",shu);
 	  } while (y > 0);
 }
