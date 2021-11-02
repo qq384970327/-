@@ -79,10 +79,19 @@ int main()
 int main() {
 	int x = 0;
 	int a = 0;
-		scanf_s("%d",x)
-	while ()
+	int p = 0;
+	int shu;
+    scanf_s("%d",&x);
+	int y = x;
+	while (x>0)
 	{
-		x/10=
-
+		x /= 10;
+		a *= 10;
+		p++;
 	};
+      printf("他是%d位数", p);
+	  do {
+			y / a = shu;
+		  printf("%d",shu);
+	  } while (y > 0);
 }
