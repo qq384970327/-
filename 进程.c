@@ -58,6 +58,8 @@ int main()
 }
 #endif
 
+//求分数和
+#if 0
 int main()
 {
 	double h = 0;
@@ -70,5 +72,5 @@ int main()
 
 	}
 	printf("h=%f", h);
-
 }
+#endif
