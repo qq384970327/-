@@ -74,3 +74,15 @@ int main()
 	printf("h=%f", h);
 }
 #endif
+
+//正序分解整数
+int main() {
+	int x = 0;
+	int a = 0;
+		scanf_s("%d",x)
+	while ()
+	{
+		x/10=
+
+	};
+}
