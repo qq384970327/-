@@ -78,20 +78,27 @@ int main()
 //正序分解整数
 int main() {
 	int x = 0;
-	int a = 0;
-	int p = 0;
+	int a = 1;
+	int p = 1;
 	int shu;
     scanf_s("%d",&x);
 	int y = x;
-	while (x>0)
+	while (x>9)
 	{
 		x /= 10;
 		a *= 10;
 		p++;
 	};
-      printf("他是%d位数", p);
+      printf("它是%d位数", p);
 	  do {
 		  shu=y / a;
-		  printf("%d",shu);
+		  
+		  printf("%d", shu);
+		  y%= a;
+		  a /= 10;
+		  
+		  if (y >=0) {
+			  printf(" ");
+		  }
 	  } while (y > 0);
 }
