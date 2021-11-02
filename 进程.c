@@ -57,3 +57,18 @@ int main()
 	printf("平均值为:%f\n", 1.0 * x / cishu);
 }
 #endif
+
+int main()
+{
+	double h = 0;
+	int n = 0;
+	int x= 0;
+	scanf_s("%d", &x);
+
+	for (n = 1; n <= x; n++) {
+		h += 1.0 / n;
+
+	}
+	printf("h=%f", h);
+
+}
