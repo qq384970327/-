@@ -97,8 +97,8 @@ int main() {
 		  y%= a;
 		  a /= 10;
 		  
-		  if (y >=0) {
+		  if (a >=0) {
 			  printf(" ");
 		  }
-	  } while (y > 0);
+	  } while (a>= 0);
 }
