@@ -88,7 +88,7 @@ int main() {
 		x /= 10;
 		a *= 10;
 		p++;
-	};
+	}
       printf("它是%d位数", p);
 	  do {
 		  shu=y / a;
@@ -97,8 +97,8 @@ int main() {
 		  y%= a;
 		  a /= 10;
 		  
-		  if (a >=0) {
+		  if (a >0) {
 			  printf(" ");
 		  }
-	  } while (a>= 0);
+	  } while (a> 0);
 }
