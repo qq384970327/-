@@ -76,6 +76,7 @@ int main()
 #endif
 
 //正序分解整数
+#if 0
 int main() {
 	int x = 0;
 	int a = 1;
@@ -102,3 +103,4 @@ int main() {
 		  }
 	  } while (a> 0);
 }
+#endif
