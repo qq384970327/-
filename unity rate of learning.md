@@ -32,6 +32,8 @@ public 公开
 
 绑定实体 public Rigidbody2D ~~;
 
+Constraints 锁定位置
+
 #### 移动
 
 
