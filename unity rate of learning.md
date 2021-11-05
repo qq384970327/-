@@ -40,16 +40,14 @@ void FixedUpdate(){}
 
 #### 移动
 
-
-
 ```c#
 float horizontalmove=Input.GetAxis("Horizontal");//横向移动
 if(horizontalmove!=0){
-    rb.velovity=new vector2(horizontalmove*speed,rb.velocityw.y);
+    rb.velovity=new vector2(horizontalmove*speed*Time.deltaTime,rb.velocityw.y);
 }
 ```
 
-#### 跳跃
+#### 转向
 
 ```c#
 float facedircetion=Input.GetAxisRaw("Horizontal");
@@ -58,3 +56,25 @@ if(facediretion!=0){
 }
 ```
 
+#### 跳跃
+
+```c#
+public float jumpforce;
+if(Input.GetButtonDown("Jump")){
+    rb.velocity=new Vector2(rb.velocity.x,jumpforce*Time.deltaTime);
+}
+```
+
+
+
+
+
+## 创建动画
+
+idle 站立
+
+创建动画承载Animator
+
+控制动画Create→Animator Controller
+
+创建动画 Window→Animation→Animation
