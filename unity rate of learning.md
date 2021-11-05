@@ -28,7 +28,11 @@ Gravity Scale 重力
 
 public 公开
 
-绑定实体 public Rigidbody2D ~~;
+private 私密
+
+获得私密的方法 对应赋名=GetComponent\<对应名称>()；
+
+绑定实体 public Rigidbody2D 赋名;
 
 Constraints 锁定位置
 
