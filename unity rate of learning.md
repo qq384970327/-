@@ -34,6 +34,10 @@ public 公开
 
 Constraints 锁定位置
 
+#### 函数
+
+void FixedUpdate(){}
+
 #### 移动
 
 
@@ -42,6 +46,15 @@ Constraints 锁定位置
 float horizontalmove=Input.GetAxis("Horizontal");//横向移动
 if(horizontalmove!=0){
     rb.velovity=new vector2(horizontalmove*speed,rb.velocityw.y);
+}
+```
+
+#### 跳跃
+
+```c#
+float facedircetion=Input.GetAxisRaw("Horizontal");
+if(facediretion!=0){
+    transform.localScale=new Vector3(facedircetion,1,1);
 }
 ```
 
