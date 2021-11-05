@@ -12,8 +12,6 @@ Order in Layer 顺序 数字越大越优先
 
 Gravity Scale 重力
 
-
-
 ##### 承载实体内容
 
 2D Object→Sorite
@@ -33,6 +31,12 @@ public 公开
 绑定实体 public Rigidbody2D ~~;
 
 Constraints 锁定位置
+
+```c#
+Mathf.Abs()//绝对值
+```
+
+
 
 #### 函数
 
@@ -71,6 +75,8 @@ if(Input.GetButtonDown("Jump")){
 
 ## 创建动画
 
+##### 基本
+
 idle 站立
 
 创建动画承载Animator
@@ -80,4 +86,12 @@ idle 站立
 创建动画 Window→Animation→Animation
 
 动画关系Window→Animation→Animator
+
+设计变量public Animator anim;
+
+##### 动画对应条件
+
+```c#
+~~~.SetFloat("running",Mathf.Abs(facedircetion))
+```
 
