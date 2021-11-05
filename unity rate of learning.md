@@ -30,6 +30,8 @@ public 公开
 
 private 私密
 
+显示私密[SerializeField]
+
 获得私密的方法 对应赋名=GetComponent\<对应名称>()；
 
 绑定实体 public Rigidbody2D 赋名;
@@ -122,5 +124,13 @@ public Collider2D coll;//设置对撞机
 
 ```c#
 if(coll.IsTouchingLayers(ground));
+```
+
+## 镜头控制
+
+创造控制载体
+
+```c#
+public Transform player;
 ```
 
