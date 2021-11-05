@@ -114,3 +114,9 @@ public LayerMask ground;
 public Collider2D coll;//设置对撞机
 ```
 
+判断碰撞
+
+```c#
+if(coll.IsTouchingLayers(ground));
+```
+
