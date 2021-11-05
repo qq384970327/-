@@ -24,3 +24,22 @@ Gravity Scale 重力
 
 #### 地图实体 Tilemap Collider 2D
 
+
+
+### 代码
+
+public 公开
+
+绑定实体 public Rigidbody2D ~~;
+
+#### 移动
+
+
+
+```c#
+float horizontalmove=Input.GetAxis("Horizontal");//横向移动
+if(horizontalmove!=0){
+    rb.velovity=new vector2(horizontalmove*speed,rb.velocityw.y);
+}
+```
+
