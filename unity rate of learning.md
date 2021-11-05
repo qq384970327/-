@@ -18,4 +18,9 @@ Gravity Scale 重力
 
 2D Object→Sorite
 
-##### 碰撞箱
+##### 碰撞箱 Box Collider 2D
+
+
+
+#### 地图实体 Tilemap Collider 2D
+
