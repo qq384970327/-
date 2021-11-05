@@ -78,3 +78,6 @@ idle 站立
 控制动画Create→Animator Controller
 
 创建动画 Window→Animation→Animation
+
+动画关系Window→Animation→Animator
+
