@@ -134,8 +134,10 @@ if(coll.IsTouchingLayers(ground));
 public Transform player;
 ```
 
-控制镜头不出去
+控制镜头不出边框
 
 Add Extension→CinemachineConfiner
 
 在地图上添加 Polygon Collider 2D
+
+选择地图
