@@ -141,3 +141,17 @@ Add Extension→CinemachineConfiner
 在地图上添加 Polygon Collider 2D
 
 选择地图
+
+### 物品收集
+
+private void OnTriggerEnter2D(Collider2D collision){}
+
+添加标签Tags  Collection
+
+```c#
+if (collision.tag == "Collection") 
+        {
+            Destroy(collision.gameObject);
+        }
+```
+
