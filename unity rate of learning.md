@@ -38,6 +38,8 @@ private 私密
 
 Constraints 锁定位置
 
+数字转字符 数字.ToString
+
 ```c#
 Mathf.Abs()//绝对值
 ```
