@@ -28,9 +28,17 @@ Gravity Scale 重力
 
 public 公开
 
-绑定实体 public Rigidbody2D ~~;
+private 私密
+
+显示私密[SerializeField]
+
+获得私密的方法 对应赋名=GetComponent\<对应名称>()；
+
+绑定实体 public Rigidbody2D 赋名;
 
 Constraints 锁定位置
+
+数字转字符 数字.ToString
 
 ```c#
 Mathf.Abs()//绝对值
@@ -95,3 +103,62 @@ idle 站立
 ~~~.SetFloat("running",Mathf.Abs(facedircetion))
 ```
 
+##### 改变条件
+
+```c#
+anim.SetBool("jumping", true);
+//与unity动画关系相联系
+```
+
+#### 设置地图
+
+```c#
+public LayerMask ground;
+```
+
+设置所属图层
+
+```c#
+public Collider2D coll;//设置对撞机
+```
+
+判断碰撞
+
+```c#
+if(coll.IsTouchingLayers(ground));
+```
+
+## 镜头控制
+
+创造控制载体
+
+```c#
+public Transform player;
+```
+
+控制镜头不出边框
+
+Add Extension→CinemachineConfiner
+
+在地图上添加 Polygon Collider 2D
+
+选择地图
+
+### 物品收集
+
+private void OnTriggerEnter2D(Collider2D collision){}
+
+添加标签Tags  Collection
+
+```c#
+if (collision.tag == "Collection") 
+        {
+            Destroy(collision.gameObject);
+        }
+```
+
+### 创建UI
+
+创建画布 Canvas
+
+添加命名空间 using UnityEngine.UI;
