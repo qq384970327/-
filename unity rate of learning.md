@@ -162,4 +162,3 @@ if (collision.tag == "Collection")
 创建画布 Canvas
 
 添加命名空间 using UnityEngine.UI;
-
