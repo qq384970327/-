@@ -104,4 +104,14 @@ int main() {
 	  } while (a> 0);
 }
 #endif
-//真的没有冲突啦！
+//
+int main()
+{
+	int i, j, k;
+	int a;
+	scanf_s("%d", a);
+	while (i+3<a)
+	{
+
+	}
+}
