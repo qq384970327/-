@@ -109,9 +109,25 @@ int main()
 {
 	int i, j, k;
 	int a;
-	scanf_s("%d", a);
-	while (i+3<a)
+	i = a;
+	j = a;
+	k = a;
+	scanf_s("%d", &a);
+	while (i<a+3)
 	{
+		while (j<a+3)
+		{
+			while (k< a+3)
+			{
+				if (i != j && j != k && i != k) 
+				{
+					printf("%d,%d,%d", i, j, k);
 
+				}
+				k++;
+			}
+			j++;
+		}
+		i++;
 	}
 }
