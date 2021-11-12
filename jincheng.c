@@ -109,10 +109,11 @@ int main()
 {
 	int i, j, k;
 	int a;
+	scanf_s("%d", &a);
 	i = a;
 	j = a;
 	k = a;
-	scanf_s("%d", &a);
+	
 	while (i<a+3)
 	{
 		while (j<a+3)
