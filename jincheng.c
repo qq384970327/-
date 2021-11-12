@@ -104,7 +104,9 @@ int main() {
 	  } while (a> 0);
 }
 #endif
-//
+
+//连续4个数字输出无重复3位数，且从小到大
+#if 0
 int main()
 {
 	int i, j, k;
@@ -113,17 +115,25 @@ int main()
 	i = a;
 	j = a;
 	k = a;
-	
-	while (i<a+3)
+	int cishu=0;
+	while (i<a+4)
 	{
-		while (j<a+3)
+		j = a;
+		while (j<a+4)
 		{
-			while (k< a+3)
+			k = a;
+			while (k< a+4)
 			{
+				
 				if (i != j && j != k && i != k) 
 				{
-					printf("%d,%d,%d", i, j, k);
-
+					printf("%d%d%d", i,j,k);
+					cishu++;
+					if (cishu % 6== 0)
+					{
+						printf("\n");
+					}
+					else { printf(" "); }
 				}
 				k++;
 			}
@@ -132,3 +142,4 @@ int main()
 		i++;
 	}
 }
+#endif
