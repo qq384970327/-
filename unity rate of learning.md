@@ -161,4 +161,6 @@ if (collision.tag == "Collection")
 
 创建画布 Canvas
 
+EventSystem 情景触发系统
+
 添加命名空间 using UnityEngine.UI;
