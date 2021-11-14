@@ -164,3 +164,17 @@ if (collision.tag == "Collection")
 EventSystem 情景触发系统
 
 添加命名空间 using UnityEngine.UI;
+
+### 消灭敌人
+
+```c#
+private void OnCollisionEnter2D(Collision2D collision)
+    {
+     if(collision.gameObject.tag =="Enemy")
+        {
+		Destroy(collision.gameObject);
+         rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.deltaTime);
+        }
+    }
+```
+
