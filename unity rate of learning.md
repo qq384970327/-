@@ -170,7 +170,7 @@ EventSystem 情景触发系统
 ```c#
 private void OnCollisionEnter2D(Collision2D collision)
     {
-     if(collision.gameObject.tag =="Enemy")
+     if(collision.gameObject.tag =="Enemy" && anim.GetBool("falling"))
         {
 		Destroy(collision.gameObject);
          rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.deltaTime);
