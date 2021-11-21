@@ -24,7 +24,7 @@ Gravity Scale 重力
 
 
 
-### 代码
+# 代码
 
 public 公开
 
@@ -42,6 +42,18 @@ Constraints 锁定位置
 
 ```c#
 Mathf.Abs()//绝对值
+```
+
+#### 消灭父子关系
+
+```c#
+transform.DetachChildren();
+```
+
+#### 删除组件
+
+```c#
+Destroy(物体.gameObject);
 ```
 
 
